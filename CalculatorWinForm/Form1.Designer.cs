@@ -109,6 +109,7 @@ namespace CalculatorWinForm
             this.subButton.TabIndex = 7;
             this.subButton.Text = "Sub";
             this.subButton.UseVisualStyleBackColor = true;
+            this.subButton.Click += new System.EventHandler(this.subButton_Click);
             // 
             // multButton
             // 
@@ -118,6 +119,7 @@ namespace CalculatorWinForm
             this.multButton.TabIndex = 8;
             this.multButton.Text = "Mult";
             this.multButton.UseVisualStyleBackColor = true;
+            this.multButton.Click += new System.EventHandler(this.multButton_Click);
             // 
             // divButton
             // 
@@ -127,6 +129,7 @@ namespace CalculatorWinForm
             this.divButton.TabIndex = 9;
             this.divButton.Text = "Div";
             this.divButton.UseVisualStyleBackColor = true;
+            this.divButton.Click += new System.EventHandler(this.divButton_Click);
             // 
             // optionLabel
             // 
