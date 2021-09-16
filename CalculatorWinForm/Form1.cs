@@ -25,14 +25,16 @@ namespace CalculatorWinForm
             resultOutput.Text = resultNumber.ToString();
         }
 
-        public int getCalculatorAdd(int firstInput, int secondInput) {
+        public int getCalculatorAdd(int firstInput, int secondInput)
+        {
              string firstNumber = firstInput.ToString();
              string secondNumber = secondInput.ToString();
              var output = Task.Run(() => Add(firstNumber, secondNumber));
              return output.Result;
         }
 
-        static async Task<int> Add(string firstNumber, string secondNumber) {
+        static async Task<int> Add(string firstNumber, string secondNumber)
+        {
             using (var httpClient = new HttpClient()) {
                 httpClient.BaseAddress = new Uri("http://localhost:51955/");
                 var resultAPI = await httpClient.GetAsync("api/Calculator/Add/?firstNum=" + firstNumber + "&secondNum=" + secondNumber);
