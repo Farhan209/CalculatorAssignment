@@ -136,9 +136,9 @@ namespace CalculatorWinForm
             this.optionLabel.AutoSize = true;
             this.optionLabel.Location = new System.Drawing.Point(247, 130);
             this.optionLabel.Name = "optionLabel";
-            this.optionLabel.Size = new System.Drawing.Size(126, 17);
+            this.optionLabel.Size = new System.Drawing.Size(153, 21);
             this.optionLabel.TabIndex = 10;
-            this.optionLabel.Text = "Choose Arithmetic:";
+            this.optionLabel.Text = "Choose Arithmetic";
             // 
             // Form1
             // 
